@@ -1,0 +1,39 @@
+
+class Employee {
+
+    int empId;
+    String empName;
+    double salary;
+
+    Employee() {
+        this(101);
+        System.out.println("Inside 0-arg constructor");
+    }
+
+    Employee(int id) {
+        this(id, "Varista");
+        System.out.println("Inside 1-arg constructor");
+    }
+
+    Employee(int id, String name) {
+        this(id, name, 30000);
+        System.out.println("Inside 2-arg constructor");
+    }
+
+    Employee(int id, String name, double sal) {
+        empId = id;
+        empName = name;
+        salary = sal;
+        System.out.println("Inside 3-arg constructor");
+    }
+
+    void display() {
+        System.out.println(
+                "Employee ID: " + empId + ", Name: " + empName + ", Salary: " + salary);
+    }
+
+    public static void main(String[] args) {
+        Employee e1 = new Employee();
+        e1.display();
+    }
+}
