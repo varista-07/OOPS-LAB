@@ -1,0 +1,15 @@
+
+class Movie {
+
+    public static void main(String[] args) {
+        int temp = 28;
+        String genre = "Thriller";
+        String Director = "Nolan";
+        Boolean partner_ready = true;
+        if (temp > 25 && genre == "Thriller" && Director == "Nolan" && partner_ready == true){
+            System.out.println("Let's go to the movies!");
+        } else {
+            System.out.println("Maybe another time.");
+        }
+    }
+}
