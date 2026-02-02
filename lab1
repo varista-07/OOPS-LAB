@@ -1,0 +1,13 @@
+
+class Intro {
+
+    public static void main(String args[]) {
+        String Name = "Varista Gupta";
+        int sapid = 590013578;
+        int batch = 27;
+        System.out.println("Name:" + Name);
+        System.out.println("Batch:" + batch);
+        System.out.println("SAP ID:" + sapid);
+
+    }
+}
